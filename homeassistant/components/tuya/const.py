@@ -211,7 +211,8 @@ class DPCode(StrEnum):
     HUMIDITY_CURRENT = "humidity_current"  # Current humidity
     HUMIDITY_INDOOR = "humidity_indoor"  # Indoor humidity
     HUMIDITY_SET = "humidity_set"  # Humidity setting
-    HUMIDITY_VALUE = "humidity_value"  # Humidity
+    HUMIDITY_VALUE = "humidity_value"  # Humidity    
+    ILLUMINANCE_VALUE = "illuminance_value"
     IPC_WORK_MODE = "ipc_work_mode"
     LED_TYPE_1 = "led_type_1"
     LED_TYPE_2 = "led_type_2"
