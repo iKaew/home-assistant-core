@@ -517,7 +517,7 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
     # https://developer.tuya.com/en/docs/iot/categorypir?id=Kaiuz3ss11b80
     "pir": (
         TuyaSensorEntityDescription(
-            id=DPCode.ILLUMINANCE_VALUE,
+            key=DPCode.ILLUMINANCE_VALUE,
             translation_key="illuminance",
             device_class=SensorDeviceClass.ILLUMINANCE,
             state_class=SensorStateClass.MEASUREMENT,
