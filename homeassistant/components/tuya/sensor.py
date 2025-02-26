@@ -515,7 +515,15 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
     ),
     # PIR Detector
     # https://developer.tuya.com/en/docs/iot/categorypir?id=Kaiuz3ss11b80
-    "pir": BATTERY_SENSORS,
+    "pir": (
+        TuyaSensorEntityDescription(
+            id=DPCode.ILLUMINANCE_VALUE,
+            translation_key="illuminance",
+            device_class=SensorDeviceClass.ILLUMINANCE,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        *BATTERY_SENSORS,
+    ),
     # PM2.5 Sensor
     # https://developer.tuya.com/en/docs/iot/categorypm25?id=Kaiuz3qof3yfu
     "pm2.5": (
